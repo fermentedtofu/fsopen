@@ -30,10 +30,9 @@ const App = () => {
   return (
     <div>
       {anecdotes[selected]}
-      <div>
-        <button onClick={handleVote}>vote</button>
-        <button onClick={handleNext}>next anecdote</button>
-      </div>
+      <p>has {votes[selected]} votes</p>
+      <button onClick={handleVote}>vote</button>
+      <button onClick={handleNext}>next anecdote</button>
     </div>
   )
 }
